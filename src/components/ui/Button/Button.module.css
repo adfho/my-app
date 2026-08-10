@@ -1,0 +1,41 @@
+.button {
+    width: 285px;
+    height: 59px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    border: none;
+  
+
+    background: #202022;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: .3s ease;
+}
+
+.button:hover {
+    background: #2b2b2d;
+}
+
+.text {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+
+    transition: transform .35s ease;
+}
+
+.button:hover .arrow {
+    transform: translateX(8px);
+}

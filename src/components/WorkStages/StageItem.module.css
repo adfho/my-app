@@ -1,0 +1,53 @@
+.item {
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.button {
+  width: 100%;
+  padding: 18px 0;
+
+  background: transparent;
+  color: var(--color-black);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-black);
+  outline-offset: 4px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+
+  transition:
+    grid-template-rows 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.contentOpen {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.description {
+  min-height: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+
+  color: var(--color-gray);
+  font-size: 14px;
+  line-height: 1.25;
+
+  transition: padding-bottom 0.35s ease;
+}
+
+.contentOpen .description {
+  padding-bottom: 18px;
+}

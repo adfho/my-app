@@ -1,0 +1,43 @@
+.workStages {
+  padding: 140px 0 80px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 500px 700px;
+
+  width: 1200px;
+  height: 685px;
+  margin: 0 auto;
+}
+
+.accordion {
+  width: 387px;
+}
+
+.title {
+  margin-bottom: 30px;
+
+  color: var(--color-black);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.image {
+  display: block;
+  width: 700px;
+  height: 685px;
+  object-fit: cover;
+  animation: imageAppear 1.5s ease;
+}
+
+@keyframes imageAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

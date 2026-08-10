@@ -1,0 +1,19 @@
+.input {
+    width: 305px;
+    height: 59px;
+
+    padding: 20px;
+
+    border: 1px solid #6A6A6F;
+
+    background: #FFFFFF;
+
+    font-family: inherit;
+    color: #202022;
+
+    outline: none;
+}
+
+.input::placeholder {
+    color: #6A6A6F;
+}

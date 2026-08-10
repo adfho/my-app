@@ -1,0 +1,58 @@
+.carousel {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+}
+
+.control {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+
+  border: 1px solid var(--color-gray);
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-gray);
+
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.control:hover:not(:disabled) {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.control:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+}

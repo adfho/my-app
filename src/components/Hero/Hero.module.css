@@ -1,0 +1,49 @@
+.hero {
+    width: 1440px;
+    height: 600px;
+    margin: 0 auto;
+
+    background-image: url("../../assets/images/hero/hero_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 640px;
+    padding-top: 135px;
+    padding-left: 240px;
+}
+
+.content h1 {
+    margin: 0 0 35px;
+
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58px;
+
+    width: 660px;
+}
+
+.form {
+    display: flex;
+    width: fit-content;
+}
+
+.form input::placeholder {
+    color: #9B9B9B;
+}
+
+.form button {
+    border-radius: 0 4px 4px 0;
+}
+
+.form input {
+    border-radius: 4px 0 0 4px;
+}
+
+.form button:hover {
+    background: #353535;
+}

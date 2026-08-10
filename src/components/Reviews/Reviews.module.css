@@ -1,0 +1,10 @@
+.reviews {
+    width: 1320px;
+    margin: 0 auto;
+
+    padding: 60px 0 40px;
+}
+
+.reviews > button {
+    margin-top: 30px;
+}
