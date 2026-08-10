@@ -7,11 +7,13 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={`container ${styles.wrapper}`}>
                 <div className={styles.company}>
-                    <div className="global_logo">
+                    <div className={`global_logo ${styles.logo}`}>
                         LOGO
                     </div>
 
-                    <p>ООО "Название компании"</p>
+                    <p>ООО "Название компании"
+                        
+                    </p>
 
                     <a href="#">
                         Политика конфиденциальности

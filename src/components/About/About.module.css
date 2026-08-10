@@ -18,9 +18,6 @@
 .text {
   width: 560px;
   transform: translateY(-40px);
-
-  color: var(--color-gray);
-  line-height: 1.3;
 }
 
 .text p + p {

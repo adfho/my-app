@@ -45,11 +45,9 @@ function Services() {
             </div>
 
             <div className={styles.description}>
-              <p>
-                {activeServices.intro}
-              </p>
+              <p>{activeServices.intro}</p>
 
-              <p>Работа с нами — это:</p>
+              <p> {isResidential ? "Наши преимущества:" : "Работа с нами — это:"}</p>
 
               <ul>
                 {activeServices.benefits.map((benefit) => (

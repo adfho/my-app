@@ -19,16 +19,6 @@
     box-sizing: border-box;
 }
 
-.logo {
-    color: var(--color-black);
-
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
-    text-decoration: none;
-}
-
 .phone {
     color: var(--color-black);
 

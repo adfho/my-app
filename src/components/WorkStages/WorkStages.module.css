@@ -17,11 +17,6 @@
 
 .title {
   margin-bottom: 30px;
-
-  color: var(--color-black);
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 .image {
