@@ -6,10 +6,10 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className="container">
         <div className={styles.content}>
-          <h1>Интерьер, который станет вашим отражением</h1>
+          <h1 className="text_48">Интерьер, который станет вашим отражением</h1>
 
           <form className={styles.form}>
-            <Input placeholder="email@example.com"/>
+            <Input placeholder="email@example.com" />
 
             <Button>Рассчитать стоимость</Button>
           </form>

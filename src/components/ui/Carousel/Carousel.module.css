@@ -27,7 +27,7 @@
 
   font-size: 32px;
   font-weight: 300;
-  
+
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -42,6 +42,7 @@
   opacity: 0.4;
   cursor: default;
 }
+
 
 .viewport {
   overflow: hidden;

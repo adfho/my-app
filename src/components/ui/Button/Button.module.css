@@ -18,6 +18,7 @@
     overflow: hidden;
 
     transition: .3s ease;
+    border-radius: 4px;
 }
 
 .button:hover {
@@ -25,7 +26,6 @@
 }
 
 .text {
-    font-size: 16px;
     white-space: nowrap;
 }
 

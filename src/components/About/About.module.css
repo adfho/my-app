@@ -30,7 +30,9 @@
   height: 400px;
   object-fit: cover;
 }
-
+h1 {
+  transform: translateY(-35px);
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 387px);

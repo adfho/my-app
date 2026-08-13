@@ -21,18 +21,13 @@
 .company {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  gap: 8px;
   color: var(--color-gray);
 }
 
 .logo {
   color: var(--color-white);
 }
-
-.company p {
-  margin: 0 0 6px;
-}
-
 
 .navigation {
   display: flex;
@@ -67,8 +62,6 @@
   color: var(--color-white);
 
   font-family: var(--font-family);
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .socials {

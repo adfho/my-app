@@ -13,8 +13,8 @@ function PortfolioCard({ image, alt, title, description }: PortfolioCardProps) {
       <img className={styles.image} src={image} alt={alt} />
 
       <div className={styles.info}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <h3 className={`${styles.title} text_24`}>{title}</h3>
+        <p className={`${styles.description} text_16`}>{description}</p>
       </div>
     </article>
   );

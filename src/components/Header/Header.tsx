@@ -14,7 +14,7 @@ const Header = () => {
           <Navigation />
 
           <a className={styles.phone} href="tel:+79001234567">
-            +7 (900) 123-45-67
+            +7 (999) 999-99-99
           </a>
         </div>
       </div>

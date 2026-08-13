@@ -16,13 +16,13 @@ function Services() {
   };
 
   return (
-    <section className={styles.services} id="services">
+    <section className={`${styles.services}text_16`} id="services">
       <div className="container">
         <div className={styles.content}>
           <div className={styles.info}>
-            <h2 className={styles.title}>Услуги</h2>
+            <h2 className={`${styles.title} text_48`}>Услуги</h2>
 
-            <div className={styles.tabs} role="tablist" aria-label="Виды услуг">
+            <div className={`${styles.tabs} text_24`} role="tablist" aria-label="Виды услуг">
               <button
                 className={`${styles.tab} ${isResidential ? styles.tabActive : ""}`}
                 type="button"
@@ -44,7 +44,7 @@ function Services() {
               </button>
             </div>
 
-            <div className={styles.description}>
+            <div className={`${styles.description} text_16`}>
               <p>{activeServices.intro}</p>
 
               <p> {isResidential ? "Наши преимущества:" : "Работа с нами — это:"}</p>
@@ -67,7 +67,7 @@ function Services() {
           </div>
 
           <form className={styles.form} onSubmit={handleSubmit}>
-            <h3 className={styles.formTitle}>Скидка на наши услуги 5%</h3>
+            <h3 className={`${styles.formTitle} text_24`}>Скидка на наши услуги 5%</h3>
             <p className={styles.formText}>
               Оставьте заявку на нашем сайте и получите скидку на ваш заказ
             </p>

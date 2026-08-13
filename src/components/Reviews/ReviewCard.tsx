@@ -16,8 +16,8 @@ const ReviewCard = ({ image, name, text }: ReviewCardProps) => {
       />
 
       <div className={styles.content}>
-        <h3>{name}</h3>
-        <p>{text}</p>
+        <h3 className="text_16">{name}</h3>
+        <p className="text_12">{text}</p>
       </div>
     </article>
   );

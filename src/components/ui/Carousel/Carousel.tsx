@@ -31,7 +31,7 @@ const Carousel = ({ title, children, slideWidth, gap, viewportWidth }: CarouselP
   return (
     <section className={styles.carousel}>
       <div className={styles.header}>
-        {title && <h2>{title}</h2>}
+        {title && <h2 className="text_48">{title}</h2>}
 
         <div className={styles.controls}>
           <button

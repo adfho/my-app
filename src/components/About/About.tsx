@@ -5,12 +5,12 @@ import aboutMain from "../../assets/images/about/about-main.png";
 
 const About = () => {
   return (
-    <section className={styles.about} id="about">
+    <section className={`${styles.about} text_16`} id="about">
       <div className="container">
         <div className={styles.top}>
-          <div className={styles.text}>
+          <div className={styles.text} >
 
-            <h2>О нас</h2>
+            <h1 className="text_48">О нас</h1>
             
             <p className={styles.mainText}>
               Студия дизайна интерьера S2 основана в 2018 году. За 6 лет активной работы мы собрали

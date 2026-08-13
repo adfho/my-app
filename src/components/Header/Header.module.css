@@ -21,9 +21,8 @@
 
 .phone {
     color: var(--color-black);
-
-    font-size: var(--font-size-base);
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 20px;
 
     text-decoration: none;
 }

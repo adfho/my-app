@@ -5,8 +5,8 @@ import styles from "./Footer.module.css";
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className={`container ${styles.wrapper}`}>
-                <div className={styles.company}>
+            <div className={`${styles.wrapper} container`}>
+                <div className={`${styles.company} text_12`}>
                     <div className={`global_logo ${styles.logo}`}>
                         LOGO
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.contact}>
-                    <h2>Остались вопросы?</h2>
+                    <h2 className="text_24">Остались вопросы?</h2>
 
                     <div className={styles.socials}>
                         <a href="#" aria-label="VK">
