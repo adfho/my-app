@@ -1,34 +1,225 @@
 .header {
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-    background: var(--color-white);
-    border-bottom: 1px solid #ececec;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: var(--color-white);
+  border-bottom: 1px solid #ececec;
 }
 
 .wrapper {
-    height: 90px;
+  height: 90px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 
-    box-sizing: border-box;
+  position: relative;
+}
+
+/* =========================
+   DESKTOP 1440
+========================= */
+
+.desktopNavigation {
+  display: block;
 }
 
 .phone {
-    color: var(--color-black);
-    font-weight: 400;
-    font-size: 20px;
+  flex-shrink: 0;
 
-    text-decoration: none;
+  color: var(--color-black);
+  text-decoration: none;
 }
 
-@media (max-width: 992px) {
-    .phone {
-        display: none;
-    }
+.burger {
+  display: none;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+
+  width: 19px;
+  height: 1px;
+
+  background: var(--color-gray);
+
+  transition: var(--transition);
+}
+
+/* Мобильное меню по умолчанию скрыто */
+
+.mobileMenu {
+  height: 544px;
+  display: none;
+}
+
+.mobileButton {
+  margin-top: 20px;
+}
+
+/* Телефон */
+
+.mobilePhone {
+  margin-top: 40px;
+
+  text-decoration: none;
+}
+/* =========================
+   TABLET 768
+========================= */
+
+@media (max-width: 768px) {
+  .header {
+    border-bottom: none;
+  }
+
+  .wrapper {
+    height: 70px;
+
+    align-items: center;
+  }
+
+  /* Скрываем desktop navigation */
+
+  .desktopNavigation {
+    display: none;
+  }
+
+  /* Скрываем телефон */
+
+  .phone {
+    display: none;
+  }
+
+  /* Показываем burger */
+
+  .burger {
+    display: flex;
+
+    position: absolute;
+    top: 23px;
+    right: 0;
+
+    z-index: 1001;
+  }
+
+  /* =========================
+       MOBILE MENU
+    ========================= */
+
+  .mobileMenu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 100px;
+
+    z-index: 999;
+
+    /* Меню изначально скрыто */
+    transform: translateY(-100%);
+
+    /* Анимация */
+    transition: transform 0.4s ease;
+
+    visibility: hidden;
+  }
+
+  .mobileMenuOpen {
+    transform: translateY(0);
+
+    visibility: visible;
+  }
+  /* Navigation */
+
+  .mobileMenu nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileMenu nav ul {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .mobileMenu nav a {
+    text-decoration: none;
+  }
+}
+
+/* =========================
+   MOBILE 375
+========================= */
+
+@media (max-width: 375px) {
+  .wrapper {
+    height: 60px;
+  }
+
+  /* Burger */
+
+  .burger {
+    top: 20px;
+    right: 0;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger span {
+    width: 19px;
+    height: 1px;
+  }
+
+  /* =========================
+       MOBILE MENU
+    ========================= */
+
+  .mobileMenu {
+    padding-top: 58px;
+  }
+
+  /* Navigation */
+
+  .mobileMenu nav ul {
+    gap: 20px;
+  }
 }

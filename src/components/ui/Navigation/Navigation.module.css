@@ -33,7 +33,11 @@
 }
 
 @media (max-width: 992px) {
-  .menu {
-    display: none;
-  }
+    .navigation {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
 }
