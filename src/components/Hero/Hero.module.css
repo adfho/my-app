@@ -1,45 +1,95 @@
 .hero {
-    width: 1440px;
-    height: 600px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 1440px;
+  height: clamp(384px, 26.67vw + 180px, 600px);
+  margin: 90px auto 0;
+  overflow: hidden;
+}
 
-    background-image: url("../../assets/images/hero/hero_image.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.heroImg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../../assets/images/hero/hero_image_1440.png");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
 }
 
 .content {
-    width: 640px;
-    padding-top: 135px;
-    padding-left: 240px;
+  position: relative;
+  z-index: 2;
+  margin-top: clamp(125px, 14.2723vw + 71.48px, 277px);
+
+  margin-left: clamp(32px, 28.27vw - 184.7px, 222px);
+
+  max-width: 660px;
+  width: 100%;
 }
 
 .content h1 {
-    margin: 0 0 35px;
-
-    color: #fff;
-
-    width: 660px;
+  color: var(--color-white);
+  margin: 0;
 }
 
 .form {
-    display: flex;
-    width: fit-content;
+  display: flex;
+  width: fit-content;
 }
 
 .form input::placeholder {
-    color: #9B9B9B;
+  color: var(--color-gray);
 }
 
 .form button {
-    border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .form input {
-    border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
-.form button:hover {
-    background: #353535;
+@media (max-width: 768px) {
+  .heroImg {
+    background-image: url("../../assets/images/hero/hero_image_768.png");
+  }
+  .content {
+    margin-left: clamp(15px, -1.225px + 4.326vw, 32px);
+  }
+}
+
+@media (max-width: 567px) {
+  .hero {
+    max-width: 375px;
+  }
+  .heroImg {
+    background-image: url("../../assets/images/hero/hero_image_375.png");
+  }
+  .content {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .form button,
+  .form input {
+    border-radius: 4px;
+    width: 305px;
+  }
+
+  .form {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
 }

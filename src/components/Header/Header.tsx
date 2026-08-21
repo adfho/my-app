@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import Navigation from "../ui/Navigation/Navigation";
 import Button from "../ui/Button/Button";
-
 import styles from "./Header.module.css";
 
+import BurgerImg from "../../assets/images/header/Burger.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,9 +23,7 @@ const Header = () => {
             aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <img src={BurgerImg}/>
           </button>
 
           <div className={styles.desktopNavigation}>

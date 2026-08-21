@@ -21,10 +21,6 @@
     border-radius: 4px;
 }
 
-.button:hover {
-    background: #2b2b2d;
-}
-
 .text {
     white-space: nowrap;
 }
