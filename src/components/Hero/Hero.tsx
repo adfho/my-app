@@ -5,7 +5,8 @@ import Input from "../ui/Input/Input";
 
 const Hero = () => {
   return (
-    <section className={`${styles.hero} ${styles.heroImg}`}>
+    <section className={styles.hero}>
+      <div className={styles.heroImg} />
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className="text_48">Интерьер, который станет вашим отражением</h1>

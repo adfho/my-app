@@ -74,13 +74,14 @@ body {
 
 @media (min-width: 375px) {
   .text_48 {
-    font-size: clamp(24px, 2.036vw + 16.366px, 32px);
+    
+    font-size: clamp(24px, 3.053vw + 12.551px, 36px);
   }
 }
 
 @media (min-width: 768px) {
   .text_48 {
-    font-size: clamp(32px, 2.381vw + 13.714px, 48px);
+    font-size: clamp(36px, 1.786vw + 22.286px, 48px);
   }
 }
 
