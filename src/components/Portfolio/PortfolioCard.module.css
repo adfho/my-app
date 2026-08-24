@@ -34,3 +34,9 @@
 .card:hover .info {
   opacity: 1;
 }
+
+@media (max-width: 425px) {
+  .card {
+    height: 265px;
+  }
+}

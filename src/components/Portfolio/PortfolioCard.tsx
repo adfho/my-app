@@ -2,15 +2,19 @@ import styles from "./PortfolioCard.module.css";
 
 type PortfolioCardProps = {
   image: string;
+  mobileImage?: string;
   alt: string;
   title: string;
   description: string;
 };
 
-function PortfolioCard({ image, alt, title, description }: PortfolioCardProps) {
+function PortfolioCard({ image, mobileImage, alt, title, description }: PortfolioCardProps) {
   return (
     <article className={styles.card}>
-      <img className={styles.image} src={image} alt={alt} />
+      <picture>
+        <source media="max-width: 768px" srcSet={mobileImage} />
+        <img className={styles.image} src={image} alt={alt} />
+      </picture>
 
       <div className={styles.info}>
         <h3 className={`${styles.title} text_24`}>{title}</h3>

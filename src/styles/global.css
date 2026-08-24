@@ -22,6 +22,7 @@ body {
 }
 
 #root {
+
   width: 100%;
   overflow-x: hidden;
 }
@@ -74,7 +75,6 @@ body {
 
 @media (min-width: 375px) {
   .text_48 {
-    
     font-size: clamp(24px, 3.053vw + 12.551px, 36px);
   }
 }
@@ -84,7 +84,6 @@ body {
     font-size: clamp(36px, 1.786vw + 22.286px, 48px);
   }
 }
-
 
 /* =========================
    LOGO

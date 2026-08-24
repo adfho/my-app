@@ -14,7 +14,8 @@
   box-sizing: border-box;
 }
 .about {
-  padding-top: 170px;
+  padding-top: clamp(5rem, -1.429rem + 13.39vw, 10.625rem);
+  max-height: auto;
 }
 .imageCard {
   display: block;
@@ -71,7 +72,7 @@ h1 {
   }
   .grid {
     grid-template-columns: repeat(2, 342px);
-    grid-template-rows: repeat(3, 270px);
+    grid-template-rows: repeat(2, 270px);
     width: 720px;
   }
 }
@@ -87,7 +88,7 @@ h1 {
   }
   .grid {
     grid-template-columns: repeat(1, 345px);
-    grid-template-rows: repeat(6, 270px);
+    grid-template-rows: repeat(4, 270px);
     width: 345px;
   }
 }

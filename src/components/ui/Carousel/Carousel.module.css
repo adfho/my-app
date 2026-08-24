@@ -45,6 +45,7 @@
 
 
 .viewport {
+  touch-action: pan-y;
   overflow: hidden;
 }
 
