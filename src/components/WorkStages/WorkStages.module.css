@@ -1,18 +1,24 @@
 .workStages {
   padding: 140px 0 80px;
 }
-
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 .content {
   display: grid;
-  grid-template-columns: 500px 700px;
-
-  width: 1200px;
+  grid-template-columns: clamp(18.938rem, 12.938rem + 12.5vw, 24.188rem) clamp(22.625rem, -0.946rem + 49.11vw, 43.25rem);
+  grid-template-columns: 1fr 1fr;
+  width: clamp(48rem, 17.143rem + 64.29vw, 75rem);
   height: 685px;
   margin: 0 auto;
 }
 
 .accordion {
-  width: 387px;
+  margin-left: clamp(2rem, -4.286rem + 13.1vw, 7.5rem);
+  width: clamp(18.938rem, 12.938rem + 12.5vw, 24.188rem);
 }
 
 .title {
@@ -21,10 +27,10 @@
 
 .image {
   display: block;
-  width: 700px;
-  height: 685px;
+  width: clamp(22.813rem, -0.545rem + 48.66vw, 43.25rem);
+  height: clamp(16.875rem, -12.768rem + 61.76vw, 42.813rem);
   object-fit: cover;
-  animation: imageAppear 1.5s ease;
+  animation: imageAppear 400ms ease-in-out;
 }
 
 @keyframes imageAppear {
@@ -36,3 +42,11 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 750px) { 
+  .image {
+    display: none;
+  }
+
+}
+  

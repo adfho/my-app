@@ -43,3 +43,12 @@
 .contentOpen .description {
   padding-bottom: 18px;
 }
+
+@media (max-width: 768px) {
+  .button {
+   font-size: clamp(1rem, 0.523rem + 2.04vw, 1.5rem);
+  }
+  .description {
+    font-size: clamp(0.75rem, 0.511rem + 1.02vw, 1rem);
+  }
+}

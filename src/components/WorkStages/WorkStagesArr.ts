@@ -1,10 +1,10 @@
-import conceptImage from "../../assets/images/work-stages/work-stages-main.png";
-import planningImage from "../../assets/images/work-stages/planning.png";
-import visualizationImage from "../../assets/images/work-stages/visualization.png";
-import documentationImage from "../../assets/images/work-stages/documentation.png";
-import specificationImage from "../../assets/images/work-stages/specification.png";
-import supplyImage from "../../assets/images/work-stages/supply.png";
-import repairImage from "../../assets/images/work-stages/repair.png";
+import conceptImage from "../../assets/images/work-stages/work-stages-main-desctop.png";
+import planningImage from "../../assets/images/work-stages/planning-desctop.png";
+import visualizationImage from "../../assets/images/work-stages/visualization-desctop.png";
+import documentationImage from "../../assets/images/work-stages/documentation-desctop.png";
+import specificationImage from "../../assets/images/work-stages/specification-desctop.png";
+import supplyImage from "../../assets/images/work-stages/supply-desctop.png";
+import repairImage from "../../assets/images/work-stages/repair-desctop.png";
 
 const stages = [
   {

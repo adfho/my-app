@@ -10,7 +10,7 @@ function WorkStages() {
 
   return (
     <section className={styles.workStages} id="stages">
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.accordion}>
             <h2 className={`${styles.title} text_48`}>Этапы работ</h2>
