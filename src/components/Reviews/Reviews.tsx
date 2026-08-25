@@ -11,9 +11,9 @@ const Reviews = () => {
         <section className={styles.reviews} id="reviews">
             <Carousel
                 title="Отзывы"
-                slideWidth={455}
+                slideWidth={590}
                 gap={15}
-                viewportWidth={1020}
+                viewportWidth={1320}
             >
                 {reviews.map((review) => (
                     <ReviewCard

@@ -17,7 +17,7 @@ function Services() {
 
   return (
     <section className={`${styles.services}text_16`} id="services">
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.info}>
             <h2 className={`${styles.title} text_48`}>Услуги</h2>
@@ -67,37 +67,39 @@ function Services() {
           </div>
 
           <form className={styles.form} onSubmit={handleSubmit}>
-            <h3 className={`${styles.formTitle} text_24`}>Скидка на наши услуги 5%</h3>
-            <p className={styles.formText}>
-              Оставьте заявку на нашем сайте и получите скидку на ваш заказ
-            </p>
+            <div className={styles.formContent}>
+              <h3 className={`${styles.formTitle} text_24`}>Скидка на наши услуги 5%</h3>
+              <p className={styles.formText}>
+                Оставьте заявку на нашем сайте и получите скидку на ваш заказ
+              </p>
 
-            <label className={styles.visuallyHidden} htmlFor="services-name">
-              Ваше имя
-            </label>
-            <Input
-              className={styles.input}
-              id="services-name"
-              name="name"
-              placeholder="Ваше имя"
-              autoComplete="name"
-            />
+              <label className={styles.visuallyHidden} htmlFor="services-name">
+                Ваше имя
+              </label>
+              <Input
+                className={styles.input}
+                id="services-name"
+                name="name"
+                placeholder="Ваше имя"
+                autoComplete="name"
+              />
 
-            <label className={styles.visuallyHidden} htmlFor="services-phone">
-              Номер телефона
-            </label>
-            <Input
-              className={styles.input}
-              id="services-phone"
-              name="phone"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              autoComplete="tel"
-            />
+              <label className={styles.visuallyHidden} htmlFor="services-phone">
+                Номер телефона
+              </label>
+              <Input
+                className={styles.input}
+                id="services-phone"
+                name="phone"
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                autoComplete="tel"
+              />
 
-            <Button className={styles.submitButton} type="submit">
-              Оставить заявку
-            </Button>
+              <Button className={styles.submitButton} type="submit">
+                Оставить заявку
+              </Button>
+            </div>
           </form>
         </div>
       </div>

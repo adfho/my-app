@@ -1,10 +1,15 @@
 .reviews {
     width: 1320px;
     margin: 0 auto;
-
+    margin-left: clamp(2rem, -4.286rem + 13.1vw, 7.5rem);
     padding: 60px 0 40px;
 }
 
 .reviews > button {
     margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .reviews {
+        margin-left: clamp(0.938rem, -0.277rem + 2.53vw, 2rem);
+    }
 }
