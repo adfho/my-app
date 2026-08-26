@@ -74,7 +74,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 997px) {
+@media (max-width: 1088px) {
   .header {
     border-bottom: 0;
   }
