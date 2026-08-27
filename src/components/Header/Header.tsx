@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={`${styles.header} ${isMenuOpen ? styles.open : ""}`}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.wrapper}>
           <a href="/" className="global_logo">
             <span>LOGO</span>
