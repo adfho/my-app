@@ -1,6 +1,11 @@
 import { Children, useRef, useState, type ReactNode } from "react";
 
 import styles from "./Carousel.module.css";
+import right from "../../../assets/icons/carousel-right.png";
+import left from "../../../assets/icons/carousel-left.png";
+
+import clsx from "clsx";
+import { useMedia } from "use-media";
 
 type CarouselProps = {
   title?: string;
@@ -11,6 +16,8 @@ type CarouselProps = {
 };
 
 const Carousel = ({ title, children, slideWidth, gap, viewportWidth }: CarouselProps) => {
+  const isTablet = useMedia({ maxWidth: "768px" });
+  const isMobile = useMedia({ maxWidth: "420px" });
   const slides = Children.toArray(children);
   const [currentIndex, setCurrentIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
@@ -57,7 +64,9 @@ const Carousel = ({ title, children, slideWidth, gap, viewportWidth }: CarouselP
   return (
     <section className={styles.carousel}>
       <div className={styles.header}>
-        {title && <h2 className="text_48">{title}</h2>}
+        {title && (
+          <h2 className={clsx(isMobile ? "text_24" : isTablet ? "text_36" : "text_48")}>{title}</h2>
+        )}
 
         <div className={styles.controls}>
           <button
@@ -67,7 +76,7 @@ const Carousel = ({ title, children, slideWidth, gap, viewportWidth }: CarouselP
             onClick={handlePrevious}
             disabled={slides.length <= 1}
           >
-            ‹
+            <img src={left} className="" />
           </button>
 
           <button
@@ -77,7 +86,7 @@ const Carousel = ({ title, children, slideWidth, gap, viewportWidth }: CarouselP
             onClick={handleNext}
             disabled={slides.length <= 1}
           >
-            ›
+            <img src={right} className="" />
           </button>
         </div>
       </div>

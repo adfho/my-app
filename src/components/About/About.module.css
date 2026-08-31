@@ -1,7 +1,7 @@
 .top {
   display: grid;
-  grid-template-columns: 560px 590px;
-  column-gap: 50px;
+  grid-template-columns: 590px 590px;
+  column-gap: 20px;
   align-items: center;
 
   max-width: 1200px;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 .about {
-  padding-top: clamp(5rem, -1.429rem + 13.39vw, 10.625rem);
+  margin-top: clamp(5rem, -1.429rem + 13.39vw, 10.625rem);
   max-height: auto;
 }
 .imageCard {
@@ -22,7 +22,7 @@
 }
 .text {
   width: 560px;
-  transform: translateY(-40px);
+  transform: translateY(-50px);
 }
 
 .text p + p {
@@ -38,8 +38,10 @@
   object-fit: cover;
 }
 h1 {
-  font-size: clamp(36px, 1.786vw + 22.286px, 48px);
-  transform: translateY(-35px);
+  transform: translateY(-20px);
+}
+.grid p{
+  max-width: 341px;
 }
 .grid {
   display: grid;
@@ -60,14 +62,21 @@ h1 {
     background-size: cover;
     width: 342px;
   }
+  .container {
+    max-width: 704px;
+  }
+  .h1 {
+    transform: translateY(-30px);
+  }
   .text {
+    transform: translateY(0);
     width: 342px;
   }
   .top {
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px; 
+    column-gap: 20px;
     width: 100%;
   }
   .grid {
@@ -75,16 +84,23 @@ h1 {
     grid-template-rows: repeat(2, 270px);
     width: 720px;
   }
+  .grid p{
+    width: 310px;
+}
 }
 
 @media (max-width: 714px) {
   .mainImage {
+    margin-top: 20px;
     background-image: url("../../assets/images/about/about-main-375.png");
     background-size: cover;
     height: 199px;
   }
   .top {
     grid-template-columns: 1fr;
+  }
+  .about{
+    margin-top: clamp(5rem, calc(8.669rem - 7.634vw), 6.875rem);
   }
   .grid {
     grid-template-columns: repeat(1, 345px);

@@ -1,14 +1,17 @@
 import styles from "./About.module.css";
 import Card from "../ui/Card/Card";
 import cards from "./Card";
-
+import clsx from "clsx";
+import {useMedia} from 'use-media';
 const About = () => {
+  const isTablet = useMedia({maxWidth: '768px'});
+
   return (
     <section className={`${styles.about} text_16`} id="about">
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.text}>
-            <h1 className={styles.h1}>О нас</h1>
+            <h1 className={clsx(styles.h1, isTablet ? "text_36" : "text_48")}>О нас</h1>
 
             <p className={styles.mainText}>
               Студия дизайна интерьера S2 основана в 2018 году. За 6 лет активной работы мы собрали

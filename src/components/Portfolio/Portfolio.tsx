@@ -14,10 +14,8 @@ function Portfolio() {
       setSlideWidth(mediaQuery.matches ? 194 : 387);
     };
 
-    // Устанавливаем правильное значение сразу
     updateSlideWidth();
 
-    // Отслеживаем изменение размера экрана
     mediaQuery.addEventListener("change", updateSlideWidth);
 
     return () => {

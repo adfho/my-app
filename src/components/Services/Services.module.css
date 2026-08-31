@@ -1,5 +1,6 @@
 .services {
-  padding: 140px 0 80px;
+  
+  margin-top: clamp(5rem, -2.143rem + 14.88vw, 11.25rem);
 }
 
 .content {
@@ -14,8 +15,6 @@
 
 .title {
   margin-bottom: 48px;
-}
-.info {
 }
 .tabs {
   display: flex;
@@ -68,8 +67,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 64px;
-
+  min-height: 44px;
+  margin-top: 10px;
   border-bottom: 1px solid var(--color-light-gray);
   color: var(--color-black);
 }
@@ -78,7 +77,8 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
+  max-width: 385px;
+  margin-top: 116px;
   border: 1px solid var(--color-gray);
 }
 
@@ -152,9 +152,7 @@
     width: clamp(21.563rem, 0.153rem + 91.35vw, 44rem);
     margin: 0 clamp(2rem, -7.778rem + 20.37vw, 7.5rem);
   }
-  .tabs {
-    font-size: clamp(1rem, 0.111rem + 1.85vw, 1.5rem);
-  }
+
   .info,
   .form {
     min-width: 0;
@@ -166,6 +164,7 @@
   }
 
   .form {
+    max-width: 704px;
     box-sizing: border-box;
   }
   .formTitle {
@@ -180,11 +179,7 @@
   .content {
     margin: 0 clamp(0.938rem, -0.076rem + 4.33vw, 2rem);
   }
-  .description,
-  .tabs,
-  .priceList {
-    font-size: clamp(0.75rem, 0.511rem + 1.02vw, 1rem);
-  }
+
   .formContent {
     margin: 40px clamp(0.875rem, -9.74rem + 45.29vw, 12rem);
   }

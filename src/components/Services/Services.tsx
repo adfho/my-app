@@ -4,8 +4,13 @@ import Button from "../ui/Button/Button";
 import Input from "../ui/Input/Input";
 import styles from "./Services.module.css";
 import { serviceGroups, type ServiceTabId } from "./ServicesData";
+import clsx from "clsx";
+import { useMedia } from "use-media";
 
 function Services() {
+  const isTablet = useMedia({ maxWidth: "1200px" });
+  const isMobile = useMedia({ maxWidth: "767px" });
+
   const [activeTab, setActiveTab] = useState<ServiceTabId>("residential");
 
   const isResidential = activeTab === "residential";
@@ -16,13 +21,13 @@ function Services() {
   };
 
   return (
-    <section className={`${styles.services}text_16`} id="services">
+    <section className={`${styles.services} text_16`} id="services">
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.info}>
-            <h2 className={`${styles.title} text_48`}>Услуги</h2>
+            <h2 className={clsx(styles.title, isMobile ? "text_24" : isTablet ? "text_36" : "text_48")}>Услуги</h2>
 
-            <div className={`${styles.tabs} text_24`} role="tablist" aria-label="Виды услуг">
+            <div className={clsx(styles.tabs, isMobile ? "text_12" : isTablet ? "text_16" : "text_24")} role="tablist" aria-label="Виды услуг">
               <button
                 className={`${styles.tab} ${isResidential ? styles.tabActive : ""}`}
                 type="button"
@@ -44,7 +49,7 @@ function Services() {
               </button>
             </div>
 
-            <div className={`${styles.description} text_16`}>
+            <div className={clsx(styles.description, isMobile ? "text_12" : "text_16")}>
               <p>{activeServices.intro}</p>
 
               <p> {isResidential ? "Наши преимущества:" : "Работа с нами — это:"}</p>
@@ -56,7 +61,7 @@ function Services() {
               </ul>
             </div>
 
-            <div className={styles.priceList}>
+            <div className={clsx(styles.priceList, isMobile ? "text_12" : "text_16")}>
               {activeServices.services.map((service) => (
                 <div className={styles.priceRow} key={service}>
                   <span>{service}</span>

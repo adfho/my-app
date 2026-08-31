@@ -27,7 +27,7 @@
 .content {
   position: relative;
   z-index: 2;
-  margin-top: clamp(125px, 14.2723vw + 71.48px, 277px);
+  margin-top: clamp(4.563rem, -9.295rem + 28.87vw, 16.688rem);
 
   margin-left: clamp(32px, 28.27vw - 184.7px, 222px);
 
@@ -37,7 +37,8 @@
 
 .content h1 {
   color: var(--color-white);
-  margin: 0;
+  letter-spacing: 1px;
+  line-height: 125%;
 }
 
 .form {
@@ -62,11 +63,15 @@
     background-image: url("../../assets/images/hero/hero_image_768.png");
   }
   .content {
+    margin-top: clamp(6.938rem, 3.598rem + 14.25vw, 10.438rem);
     margin-left: clamp(15px, -1.225px + 4.326vw, 32px);
+  }
+  .content h1{
+    max-width: 560px;
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 616px) {
   .hero {
     max-width: 375px;
   }

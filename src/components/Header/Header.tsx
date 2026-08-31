@@ -1,10 +1,10 @@
 import { useState } from "react";
-
 import Navigation from "../ui/Navigation/Navigation";
 import Button from "../ui/Button/Button";
 import styles from "./Header.module.css";
 
 import BurgerImg from "../../assets/images/header/Burger.png";
+import clsx from "clsx";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Header = () => {
     <header className={`${styles.header} ${isMenuOpen ? styles.open : ""}`}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <a href="/" className="global_logo">
+          <a href="/" className={clsx("global_logo", "text_36")}>
             <span>LOGO</span>
           </a>
 
