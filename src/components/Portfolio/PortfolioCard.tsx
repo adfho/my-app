@@ -1,4 +1,6 @@
 import styles from "./PortfolioCard.module.css";
+import clsx from "clsx";
+import { useMedia } from "use-media";
 
 type PortfolioCardProps = {
   image: string;
@@ -9,6 +11,7 @@ type PortfolioCardProps = {
 };
 
 function PortfolioCard({ image, mobileImage, alt, title, description }: PortfolioCardProps) {
+  const isMobile = useMedia({ maxWidth: "425px" });
   return (
     <article className={styles.card}>
       <picture>
@@ -17,8 +20,8 @@ function PortfolioCard({ image, mobileImage, alt, title, description }: Portfoli
       </picture>
 
       <div className={styles.info}>
-        <h3 className={`${styles.title} text_24`}>{title}</h3>
-        <p className={`${styles.description} text_16`}>{description}</p>
+        <h3 className={clsx(styles.title, isMobile ? "text_16" : "text_24")}>{title}</h3>
+        <p className={clsx(styles.description,isMobile ?"text_12" : "text_16")}>{description}</p>
       </div>
     </article>
   );

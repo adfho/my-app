@@ -21,10 +21,6 @@
   display: block;
 }
 
-.control:disabled {
-  opacity: 0.4;
-  cursor: default;
-}
 
 .viewport {
   touch-action: pan-y;
